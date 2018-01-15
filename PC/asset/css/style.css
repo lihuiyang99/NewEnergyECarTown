@@ -1116,10 +1116,10 @@ tbody tr {
   color: #3a3a3b;
 }
 .slide-page .slide-button-prev {
-  left: -50px !important;
+  left: -47px !important;
 }
 .slide-page .slide-button-next {
-  right: -50px !important;
+  right: -47px !important;
 }
 .slide-li {
   text-align: center;
@@ -1140,7 +1140,7 @@ tbody tr {
 }
 .slide-li .slide-li-cons {
   position: absolute;
-  top: 676px;
+  top: 630px;
   width: 100%;
   height: 250px;
 }
@@ -1162,6 +1162,12 @@ tbody tr {
   width: 100%;
   top: 0!important;
   margin: 0;
+}
+.slide-page .slide-button-prev, .slide-page .slide-button-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -190px!important;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */

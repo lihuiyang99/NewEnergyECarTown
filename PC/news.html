@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="asset/css/reset.css" />
 	<!--style.css是less1.less,less2.less,less3.less编译后且合并后的文件-->
 	<link rel="stylesheet" href="asset/css/style.css" />
-	
 </head>
 
 <body>
@@ -62,7 +61,25 @@
                             <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
                         </ul>
                         <div id="page" class="page_div"></div>
-                    </div>
+					</div>
+				</div>
+				<div class="servceDes" style="display:none">
+					<h3 id="servce" class="title1">媒体新闻</h3>
+					<div class="news">
+                        <ul class="newList">
+                            <a href="content.html"><li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li></a>
+                            <li><p>· 复刻森林城市,碧桂园要在国内布局100个科技小镇</p><span>2017年11月21日</span></li>
+                            <li><p>· 季统凯:中科院牵手碧桂园共建“科技小镇”产业生态系统</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 复刻森林城市,碧桂园要在国内布局100个科技小镇</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 复刻森林城市,碧桂园要在国内布局100个科技小镇</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                        </ul>
+                        <div id="page1" class="page_div"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -100,9 +117,29 @@
         })
         
 
-        //分页
-        //分页
+
+		//tab切换
+		$('.servceList li').on('click',function(){
+			var index = $(this).index()
+			$('.comR .servceDes').hide();
+			$('.comR .servceDes').eq(index).show();
+		})
+
+        //小镇新闻分页
+
 		$("#page").paging({
+			pageNo:1,
+			totalPage: 20,
+			totalSize: 10,
+			callback: function(num) {
+				alert(num)
+			}
+        })
+
+
+		//媒体新闻分页
+
+		$("#page1").paging({
 			pageNo:1,
 			totalPage: 20,
 			totalSize: 10,
