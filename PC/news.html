@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>小镇动态</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="asset/css/reset.css" />
+	<!--style.css是less1.less,less2.less,less3.less编译后且合并后的文件-->
+	<link rel="stylesheet" href="asset/css/style.css" />
+	
+</head>
+
+<body>
+	<!-- 第一部分 -->
+	<div class="servceHeader">
+		<div class="slideTo">
+			<div class="header">
+				<img class="logo" src="./asset/img/logo.png" alt="">
+				<div class="nav">
+					<ul class="navList">
+						<a href="home.html"><li>首页</li></a>
+						<a href="about.html"><li>小镇介绍</li></a>
+						<a href="servce.html"><li>产业服务</li></a>
+						<a href="news.html"><li class="active">小镇动态</li></a>
+						<a href="contact.html"><li>联系我们</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第二部分 -->
+	<div class="servceCon">
+		<div class="servceContent">
+			<div class="conL">
+				<ul class="servceList">
+					<li class="active">
+						<a href="#">小镇新闻</a>
+					</li>
+					<li>
+						<a href="#">媒体新闻</a>
+                    </li>
+                    
+
+				</ul>
+			</div>
+			<div class="comR">
+				<div class="servceDes">
+					<h3 id="servce" class="title1">小镇新闻</h3>
+					<div class="news">
+                        <ul class="newList">
+                            <a href="content.html"><li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li></a>
+                            <li><p>· 复刻森林城市,碧桂园要在国内布局100个科技小镇</p><span>2017年11月21日</span></li>
+                            <li><p>· 季统凯:中科院牵手碧桂园共建“科技小镇”产业生态系统</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 复刻森林城市,碧桂园要在国内布局100个科技小镇</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 复刻森林城市,碧桂园要在国内布局100个科技小镇</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                            <li><p>· 碧桂园签约新能源汽车协会，围绕科技小镇合作</p><span>2017年11月21日</span></li>
+                        </ul>
+                        <div id="page" class="page_div"></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer部分 -->
+	<div class="footer">
+		<div class="footerInner">
+			<img class="logo" src="./asset/img/logo.png" alt="">
+			<div class="nav">
+				<ul class="navList">
+					<a href="home.html"><li>首页</li></a>
+					<a href="about.html"><li>小镇介绍</li></a>
+					<a href="servce.html"><li>产业服务</li></a>
+					<a href="news.html"><li class="active">小镇动态</li></a>
+					<a href="contact.html"><li>联系我们</li></a>
+				</ul>
+			</div>
+		</div>
+		<p class="copyRight">佛山市顺德区碧桂园物业发展有限公司版权所有 粤ICP备05055114号-1</p>
+	</div>
+	<img class="goTop" src="./asset/img/gotop.png" alt="">
+
+
+	<!--mr-app.js是jquery和common.js合并后的文件-->
+	<script src="asset/js/mr-app.js"></script>
+	<!--js.js文件是进行js1.js,js2.js,js3.js合并后的文件-->
+	<script src="asset/js/js.js"></script>
+    <script src='./asset/plug/jquery.SuperSlide.2.1.1.js'></script>
+    <script src='./asset/plug/paging.js'></script>
+	<script type="text/javascript">
+		$('.servceList li').click(function () {
+			$(this).addClass('active').siblings().removeClass('active')
+        })
+        
+
+        //分页
+        //分页
+		$("#page").paging({
+			pageNo:1,
+			totalPage: 20,
+			totalSize: 10,
+			callback: function(num) {
+				alert(num)
+			}
+        })
+        
+        /*
+		// 模拟ajax数据用以下方法，方便用户更好的掌握用法
+		//参数为当前页
+		ajaxTest(1);
+		
+		function ajaxTest(num) {
+			$.ajax({
+				url: "table.json",
+				type: "get",
+				data: {},
+				dataType: "json",
+				success: function(data) {
+					console.log(data);
+					//分页
+					$("#page").paging({
+						pageNo: num,
+						totalPage: data.totalPage,
+						totalSize: data.totalSize,
+						callback: function(num) {
+							ajaxTest(num)
+						}
+					})
+				}
+			})
+		}
+		*/
+	</script>
+</body>
+
+</html>

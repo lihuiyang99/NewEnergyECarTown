@@ -1,0 +1,748 @@
+
+
+.header .twb_tuijian {
+  position: absolute;
+  top: 0px;
+  left: 0.76rem;
+  width: 6.02rem;
+  height: 0.93rem;
+  line-height: 0.93rem;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+.header .twb_back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.header .tuoyuan {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.twb_jiazai {
+  width: 7.5rem;
+  height: 10.8rem;
+  background: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.twb_jiazai li {
+  background: url(../img/ps1/1.jpg) no-repeat;
+  width: 7.5rem;
+  height: 2.7rem;
+  overflow: hidden;
+  position: relative;
+}
+.twb_jiazai li img {
+  width: 3.2rem;
+  height: 2.7rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.twb_jiazai li .wo1 {
+  position: absolute;
+  right: 0px;
+  height: 2.7rem;
+  top: 0px;
+  width: 4.3rem;
+  background: green;
+}
+.twb_jiazai li .wo1 .wo {
+  width: px;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.36rem;
+  color: #ffffff;
+  margin-right: 100px;
+  background: blue;
+}
+.twb_jiazai li .wo1 p {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.28rem;
+  color: #718fd5;
+}
+.twb_jiazai li .wo1 span {
+  width: 100%;
+  height: 0.38rem;
+  line-height: 0.38rem;
+  font-size: 0.28rem;
+  color: #ffffff;
+}
+
+.test2 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
+body {
+  background: #fff;
+}
+.test3 {
+  font-size: 0.24rem;
+  background: green;
+}
+
+/*  首页banner部分 */
+.banner{
+   position: relative;
+   width: 100%;
+   height: 4.7rem;
+   background: url('../img/banner.jpg') no-repeat;
+   background-size: 100% 100%; 
+}
+.banner .logo{
+  position: absolute;
+  left: .35rem;
+  top: .4rem; 
+  display: block;
+  width: 1.65rem;
+  height: .78rem;
+  background: url('../img/logo.png') no-repeat;
+  background-size: 100% 100%;
+}
+.banner .navbtn{
+  position: absolute;
+  top: .47rem;
+  right: .49rem;
+  display: block;
+  width: .64rem;
+  height: .64rem;
+  background: url('../img/navbtn.png') no-repeat;
+  background-size: 100% 100%; 
+}
+.banner .wenzi{
+  position: absolute;
+  top :1.9rem;
+  left: 1.16rem;
+}
+.banner .wenzi .zhanfang{
+  height: .38rem;
+  line-height:.38rem;
+  font-size: .22rem;
+  color: #fff;
+  letter-spacing: .05rem;
+}
+.banner .wenzi .title{
+  height: .56rem;
+  line-height: .56rem;
+  font-size: .4rem;
+  font-weight: bold;
+  color: #fff;
+}
+.banner .wenzi .invite{
+  margin-left: 3.1rem; 
+  height: .41rem;
+  line-height: .41rem;
+  font-size: .19rem;
+  color: #fff;
+  letter-spacing: .04rem;
+}
+.wenzi .invite i{
+  display: inline-block;
+  width: .19rem;
+  height: .19rem;
+  background: url('../img/iconR.png') no-repeat;
+  background-size: 100% 100%; 
+  vertical-align: -.02rem;
+  margin-left: .12rem;
+}
+
+/* 小镇愿景 */
+.hope{
+  position: relative;
+  width: 100%;
+  height: 5.3rem;
+}
+.hopecon{
+  padding-bottom: .83rem;
+  position: absolute;
+  left: 1.77rem;
+  top: -.37rem;
+  width: 5.37rem;
+  height: 4.19rem;
+  box-shadow: 0 0 .4rem #e5e8f3;
+}
+.hopecon .hopeconbg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+.hopecon .hopewenzi{
+  padding:.25rem .43rem 0 2.17rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: url('../img/vision.png') no-repeat .2rem .2rem;
+  background-size:80% 22%;
+  z-index: 2; 
+}
+.hopewenzi .title{
+    height: .66rem;
+    line-height: .66rem;
+    font-size: .28rem;
+    font-weight: bold;
+    color: #484848;
+}
+.hopewenzi span{
+  display: block;
+  width: .42rem;
+  height: .02rem;
+  background: #484848;
+}
+.hopewenzi .focus{
+  margin-bottom:.08rem; 
+  line-height: .59rem;
+  font-size: .19rem;
+  color: #484848;
+}
+.hopewenzi .con{
+  line-height: .3rem;
+  font-size:.18rem;
+  color: #484848; 
+}
+.hopepic{
+  position: absolute;
+  top:1.18rem;
+  left:.17rem;
+  width: 3.48rem;
+  height: 3.36rem;
+  box-shadow: 0 0 .6rem #e9edfb;
+  z-index: 10;
+}
+.hopepic img{
+  width: 100%;
+  height: 100%;
+}
+/* 小镇全景图 */
+.quanjing{
+  padding: .67rem 0 0 .37rem; 
+  position: relative;
+  height: 4.92rem;
+  background: url('../img/quanjing.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.quanjing .title{
+  height:.28rem;
+  line-height: .28rem;
+  font-size: .17rem;
+  color: #fff; 
+}
+.quanjing .title i{
+  display: inline-block;
+  width: .35rem;
+  height: .22rem;
+  background: url('../img/iconquanjing.png') no-repeat;
+  background-size:100% 100%; 
+  vertical-align: middle;
+  margin-right:.12rem; 
+}
+.quanjing .hometown{
+  height: .76rem;
+  line-height: .76rem;
+  font-size: .4rem;
+  font-weight: bold;
+  color: #fff;
+}
+.quanjing span{
+  display: block;
+  width: .43rem;
+  height: .03rem;
+  background: #fff;
+}
+.quanjing .open{
+   height:.66rem;
+   line-height: .66rem;
+   font-size: .2rem;
+   color: #fff; 
+}
+/* 八大特色服务 */
+.service .title{
+  width: 100%;
+  height: 1.98rem;
+  background: url('../img/service.png') no-repeat center;
+  background-size: 50% 50%;
+  line-height: 1.98rem;
+  text-align: center;
+  font-size: .28rem;
+  font-weight: bold;
+  color:#484848;
+}
+
+.swiper-container{
+  position: relative;
+  height :4.12rem;
+  width:100%;
+  overflow: hidden
+}
+
+.swiper-container .swiper-slide {
+  position: relative;
+  width:100%;
+  height: 3.68rem; 
+}
+.swiper-container .swiper-slide img{
+  width: 6.32rem;
+  margin: 0 0.56rem;
+  height: 100%;
+}
+.swiper-container .swiper-slide p{
+   padding-left: .22rem; 
+   position: absolute;
+   left: .56rem;
+   bottom: 0;
+   width:100%;
+   height: .61rem;
+   background: linear-gradient(top,bottom,#fff,#777);
+   line-height: .61rem;
+   font-size: .25rem;
+   color: #fff;
+}
+/* 小镇联盟 */
+.lianmeng .header{
+  height: 1.78rem;
+  background: url('../img/unionTitle.png') no-repeat center;
+  background-size:50% 50%;
+  line-height: 1.78rem;
+  text-align: center;
+  font-size: .29rem;
+  font-weight: bold;
+  color: #484848;
+}
+
+/* 合作伙伴 */
+.partner .header{
+  height: 1.54rem;
+  background: url('../img/partnerTitle.png') no-repeat center;
+  background-size:50% 50%;
+  line-height: 1.54rem;
+  text-align: center;
+  font-size: .29rem;
+  font-weight: bold;
+  color: #484848;
+}
+.partner .wrapper{
+  padding: 0  .13rem .74rem .16rem; 
+}
+.partner .wrapper img{
+  width: 100%;
+}
+/* 预约参观 */
+.yuyue{
+    padding: .96rem  1.13rem 1.2rem 1.16rem;
+    height: 7.64rem;
+    background: url('../img/yuyueBg.png') no-repeat;
+    background-size: 100% 100%; 
+}
+.yuyue .wrapper{
+  padding: .31rem 0 .49rem 0;
+  background: #fff;
+}
+.yuyue .wrapper .title{
+  height: .68rem;
+  line-height: .68rem;
+  background: url('../img/appointment.png') no-repeat center;
+  background-size: 50% 50%;
+  text-align: center;
+  font-size: .28rem;
+  font-weight: bold;
+  color: #2d3134; 
+}
+.yuyue .wrapper .des{
+  padding-bottom: .43rem; 
+  /* height: .37rem; */
+  line-height: .37rem;
+  text-align: center;
+  font-size: .21rem;
+  color: #2d3134;
+}
+/* 预约参观表单 */
+.yuyue .wrapper .form{
+  margin-left: 1.27rem;
+  width: 2.67rem; 
+}
+.form label{
+  display: block;
+  height: .33rem;
+  line-height: .33rem;
+  font-size: .21rem;
+  color: #2d3134;
+}
+.form label i{
+  font-style: normal;
+   color: #ff0f0f;
+}
+.form input[type="text"]{
+  margin-bottom: .21rem; 
+  display: block;
+  width: 100%;
+  height: .37rem;
+  border-bottom: .01rem solid #484848;
+  font-size: .21rem;
+  color: #969899;
+}
+.form button{
+  margin-bottom: .2rem; 
+  display: block;
+  width: 2.66rem; 
+  height: .53rem;
+  background: #3a4b83;
+  border-radius: .28rem;
+  line-height: .53rem;
+  text-align: center;
+  font-size:.19rem;
+  color:#fff;
+  outline: none;
+  border: none;
+}
+.form button.liji{
+   margin-top: .17rem; 
+}
+/* 首页底部导航 */
+.footer{
+  padding-top: .44rem;
+  height: 1.78rem;
+  background: #293253;
+}
+.footer .footerTop{
+  padding-left: .42rem;
+  height: .87rem;
+}
+.footer .footerTop .logo{
+  /* margin-right: .49rem;  */
+  display: inline-block;
+  width: 1.65rem;
+  height: .78rem;
+  background: url('../img/logo.png') no-repeat center;
+  background-size: 100% 100%;
+  vertical-align: top;
+}
+.footer .footerTop .nav{
+  display: inline-block;
+  padding: .13rem 0 .23rem 0;
+}
+.footerTop .nav li{
+  margin: 0 .08rem;
+  float: left;
+  line-height: .52rem;
+  text-align: center;
+  font-size: .18rem;
+  color: #fff;
+}
+.footerTop .nav li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* 导航被点击时底部出现下边框 */
+.footerTop .nav li a:hover,.footerTop .nav li a:visited{
+  border-bottom: .01rem solid #fff;
+}
+/* 当屏幕为320px时 */
+/* @media screen and (max-width:320px){
+  .footerTop .nav li{
+    margin: 0 .006rem!important;
+  }
+} */
+/* 版权信息 */
+.footer .footerBom{
+  height: .91rem;
+  line-height: .91rem;
+  text-align: center;
+  font-size: .15rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/* 二级页面产业服务 */
+.header{
+  position: relative;
+  width:7.5rem;
+  height: 3.2rem;
+  background: url('../img/proService.jpg') no-repeat;
+  background-size: 100% 100%; 
+}
+.headerTop{
+  display: none;
+  width:7.5rem;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background: #000;
+}
+.header .logo,.headerTop .logo{
+  position: absolute;
+  left: .35rem;
+  top: .4rem; 
+  display: block;
+  width: 1.65rem;
+  height: .78rem;
+  background: url('../img/logo.png') no-repeat;
+  background-size: 100% 100%;
+}
+.header .navbtn,.headerTop .navbtn{
+  position: absolute;
+  top: .47rem;
+  right: .49rem;
+  display: block;
+  width: .64rem;
+  height: .64rem;
+  background: url('../img/navbtn.png') no-repeat;
+  background-size: 100% 100%; 
+}
+.headerTop .navbtn{
+  width:.84rem;
+  height: .84rem;
+  background: url('../img/closebtn.png') no-repeat!important;
+  background-size: 100% 100%;
+}
+.header p{
+  position: absolute;
+  top:.92rem;
+  width:100%;
+  height:2.28rem;
+  line-height: 2.28rem;
+  text-align: center;
+  font-size: .4rem;
+  color: #fff; 
+}
+/* 二级页面选项卡部分 */
+.tabs{
+  width: 7.5rem;
+}
+.tabs ul{
+  margin-left: -.02rem;
+  height:.83rem;
+}
+.tabs ul li{
+  position: relative;
+  float: left;
+  width:3.74rem;
+  height: .81rem;
+  border-left: .02rem solid #aeb5cc;
+  border-bottom: .02rem solid #aeb5cc;
+  line-height: .81rem;
+  text-align: center;
+  font-size: .31rem;
+  color: #6d6e6e;
+ 
+}
+.tabs ul li i{
+  position: absolute;
+  left: 50%;
+  bottom: -.12rem;
+  margin-left: -.06rem; 
+  display: block;
+  border: .06rem solid ;
+  border-color: #3a4b83 transparent transparent transparent;
+}
+.tabs ul li.active{
+  border-bottom: .02rem solid #3a4b83;
+  color: #3a4b83;
+}
+.tabs .tabCon div{
+  display: none;
+}
+/* 二级页面 */
+.tabs .tabCon{
+  padding: .2rem .43rem .32rem .38rem ;
+}
+.tabs .tabCon h3{
+  height:.68rem;
+  line-height: .68rem;
+  font-size: .26rem;
+  color: #414243; 
+}
+.tabs .tabCon dl{
+  padding-bottom: .2rem;
+}
+.tabCon dl dt{
+  height:.5rem;
+  line-height: .5rem;
+  font-size: .24rem;
+  color: #3a4b83;
+}
+.tabCon dl dd{
+  line-height: .45rem;
+  font-size: .23rem;
+  color: #414243;
+}
+
+
+/* 导航内容部分 */
+.headerTop .navbtn .navCon{
+  display: none;
+  position: absolute;
+  top :1rem;
+  right: -.49rem;
+  padding-top: .3rem;
+  padding-bottom: .8rem;
+  width :7.5rem;
+  font-size: .4rem;
+  background: #000;
+  z-index:10;
+}
+.headerTop .navbtn .navCon li{
+  padding: 0 .2rem; 
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  color: #fff;
+}
+.headerTop .navbtn .navCon li a{
+  display: block;
+  width :100%;
+  height :100%;
+  border-bottom: .02rem solid #484848;
+}
+/*# sourceMappingURL=../maps/style.css.map */
+
+
+
+.lianmeng .wrapper{
+  position: relative;
+}
+.lianmeng .wrapper .over{
+  overflow: hidden;
+  margin-left: .43rem;
+  margin-right: .49rem;
+}
+.container{
+  max-width: 800px;
+  /* margin: 0 auto; */
+  
+  /* overflow: hidden; */
+  height: 4.33rem;
+  position: relative;
+}
+.slide{
+  width: 100%;
+  padding: .15rem;
+  min-height: 180px;
+  /* overflow: hidden; */
+  position: relative;
+
+}
+.slide .img{
+  overflow: hidden;
+  position: absolute;
+  transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
+}
+.slide .img img{
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  margin: 0;
+}
+.slide .img .imgCon{
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.slide .img1{
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: -50%;
+  z-index: 1;
+}
+.slide .img2{
+  width: 60%;
+  height: 89.1%;
+  top: 20%;
+  left: -20%;
+  z-index: 2;
+}
+.slide .img3{
+  width: 90.6%;
+  height: 100%;
+  top: 10%;
+  left: 5%;
+  z-index: 3;
+}
+.slide .img4{
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 60%;
+  z-index: 2;
+}
+.slide .img5{
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: 110%;
+  z-index: 1;
+}
+.slide-bt{
+  position: absolute;
+  left: 50%;
+  bottom: -.38rem;
+  z-index: 10;
+}
+.slide-bt span{
+  width: .32rem;
+  height: .08rem;
+  background: #d1d2d4;
+  float: left;
+  margin: 0 .09rem;
+}
+.slide .slide-bt .on{
+  background: #36467c;
+}
+button{
+  position: absolute;
+  top:25%;
+  margin-top:.52rem; 
+  display: block;
+  width: .4rem;
+  height: .36rem;
+  background-size:100% 100%; 
+  border: none;
+  outline-style: none;
+}
+button.left{
+   left: .1rem;
+   background: url('../img/arrowL.png') no-repeat center;
+}
+button.right{
+  right: .1rem;
+  background: url('../img/arrowR.png') no-repeat center;
+}
+
+/* 对应文字内容样式 */
+.wrapper .wenzi{
+   margin-top: .12rem; 
+}
+.wrapper .wenzi h3{
+  padding-left:.62rem; 
+  padding-right: .76rem;
+  height:.69rem;
+  line-height: .69rem;
+  font-size: .26rem;
+  font-weight: bold;
+  color: #484848;
+}
+.wrapper .wenzi p{
+  padding-left:.62rem; 
+  padding-right: .76rem;
+  line-height: .43rem;
+  font-size:.21rem;
+  color: #484848; 
+}

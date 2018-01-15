@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>联系我们</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="asset/css/reset.css" />
+	<!--style.css是less1.less,less2.less,less3.less编译后且合并后的文件-->
+	<link rel="stylesheet" href="asset/css/style.css" />
+	
+</head>
+
+<body>
+	<!-- 第一部分 -->
+	<div class="servceHeader">
+		<div class="slideTo">
+			<div class="header">
+				<img class="logo" src="./asset/img/logo.png" alt="">
+				<div class="nav">
+					<ul class="navList">
+						<a href="home.html"><li>首页</li></a>
+						<a href="about.html"><li>小镇介绍</li></a>
+						<a href="servce.html"><li>产业服务</li></a>
+						<a href="news.html"><li>小镇动态</li></a>
+						<a href="contact.html"><li class="active">联系我们</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第二部分 -->
+	<div class="servceCon">
+		<div class="servceContent">
+			<div class="conL">
+				<ul class="servceList">
+					<li class="active">
+						<a href="#flow">进驻流程</a>
+					</li>
+					<li>
+						<a href="#phone">小镇电话</a>
+					</li>
+					<li>
+						<a href="#Navigation">小镇导航</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="comR">
+				<div class="servceDes">
+					<h3 id="flow" class="title1">进驻流程</h3>
+					<h5 class="title3">企业考察</h5>
+					<p class="title3des">•企业考察园区环境，选择进驻方式</p>
+					<p class="title3des">•企业确认需求物业单元面积和硬件要求</p>
+					<p class="title3des">•企业符合园区入住条件</p>
+					<h5 class="title3">入园登记</h5>
+					<p class="title3des">•填写《企业入园申请表》</p>
+					<p class="title3des">•提交企业营业执照、税务登记证、组织机构代码证复印件/工商名称核准书及其他相关需求文件</p>
+					<h5 class="title3">入园评审</h5>
+					<p class="title3des">•招商中心初评企业入园条件</p>
+					<p class="title3des">•市、区政府进行审核</p>
+					<h5 class="title3">签署入园协议</h5>
+					<p class="title3des">•签署《房屋租赁协议》或《企业入园认购协议》</p>
+					<p class="title3des">•按规定日期签署《买卖合同》并办理相关手续</p>
+					<h5 class="title3">企业进驻</h5>
+					<p class="title3des">•物业交付企业验收</p>
+					<p class="title3des">•企业装修办理手续</p>
+					<h5 class="title3">项目入园孵化流程</h5>
+					<p class="title3des">•提交孵化项目可行性报告</p>
+					<p class="title3des">•填写《孵化企业登记表》</p>
+					<p class="title3des">•资料审核</p>
+					<p class="title3des">•办理工商注册，税务登记等</p>
+
+					<h3 class="title1" id="phone">小镇电话</h3>
+					<p class="title3des">0757-26600066/4009306998</p>
+
+					<h3 class="title1" id="Navigation">小镇导航</h3>
+					<p class="title3des">中国·顺德</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer部分 -->
+	<div class="footer">
+		<div class="footerInner">
+			<img class="logo" src="./asset/img/logo.png" alt="">
+			<div class="nav">
+				<ul class="navList">
+					<a href="home.html"><li>首页</li></a>
+					<a href="about.html"><li>小镇介绍</li></a>
+					<a href="servce.html"><li>产业服务</li></a>
+					<a href="news.html"><li>小镇动态</li></a>
+					<a href="contact.html"><li class="active">联系我们</li></a>
+				</ul>
+			</div>
+		</div>
+		<p class="copyRight">佛山市顺德区碧桂园物业发展有限公司版权所有 粤ICP备05055114号-1</p>
+	</div>
+	<img class="goTop" src="./asset/img/gotop.png" alt="">
+
+	<!--mr-app.js是jquery和common.js合并后的文件-->
+	<script src="asset/js/mr-app.js"></script>
+	<!--js.js文件是进行js1.js,js2.js,js3.js合并后的文件-->
+	<script src="asset/js/js.js"></script>
+	<script src='./asset/plug/jquery.SuperSlide.2.1.1.js'></script>
+	<script type="text/javascript">
+		$('.servceList li').click(function () {
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+</body>
+
+</html>
