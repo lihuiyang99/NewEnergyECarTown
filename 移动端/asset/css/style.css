@@ -629,7 +629,7 @@ body {
   /* margin: 0 auto; */
   
   /* overflow: hidden; */
-  height: 4.33rem;
+  height: 4.5rem;
   position: relative;
 }
 .slide{
@@ -693,7 +693,7 @@ body {
 .slide-bt{
   position: absolute;
   left: 50%;
-  bottom: -.38rem;
+  bottom: -.5rem;
   z-index: 10;
 }
 .slide-bt span{
