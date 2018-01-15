@@ -138,9 +138,9 @@ var slideListNum=0;
 //修改当前最中间图片对应按钮选中状态
 function slideLi(){
     var slideList = parseInt($(".slide .img3").attr("data-slide-imgId")) + 1;
-    aaa(slideList)
     $(".slide-bt span").removeClass("on");
     $(".slide-bt span[data-slide-bt="+slideList+"]").addClass("on");
+    aaa(slideList);
 }
 
 

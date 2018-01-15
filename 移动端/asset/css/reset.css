@@ -13,8 +13,8 @@ input,textarea{background: none; border: none;}
 table { border-collapse:collapse; }
 body { width: 100%; margin: 0 auto; color:#333; background:#fff; }
 html {font-family: "FZLanTingHei-L-GBK", "Helvetica Neue", "微软雅黑", "黑体", Helvetica, STHeiTi, sans-serif;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);font-size: 100px;}
-a { color:#666; text-decoration:none; }
-a:visited { color:#1a1a1a; }
+a { color:#484848; text-decoration:none; }
+a:visited { color:#484848; }
 a:hover, a:active, a:focus {text-decoration:none; }
 .clearfix{display: block;content:'';clear: both;}
 /*自定义alert*/
