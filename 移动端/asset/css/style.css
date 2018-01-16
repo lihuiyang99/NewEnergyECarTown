@@ -708,7 +708,7 @@ body {
 }
 button{
   position: absolute;
-  top:25%;
+  top:95px;
   margin-top:.52rem; 
   display: block;
   width: .4rem;
