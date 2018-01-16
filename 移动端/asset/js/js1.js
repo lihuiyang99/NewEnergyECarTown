@@ -182,10 +182,10 @@ function k_touch() {
     }
 
     function touchEnd(event) {
-        if (_end < -100) {
+        if (_end < -5) {
             left();
             _end=0;
-        }else if(_end > 100){
+        }else if(_end > 5){
             right();
             _end=0;
         }

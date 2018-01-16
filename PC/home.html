@@ -4,19 +4,33 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title>首页</title>
+	<title>碧桂园新能源科技小镇官网</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<link rel="stylesheet" href="asset/css/reset.css" />
 	<!--style.css是less1.less,less2.less,less3.less编译后且合并后的文件-->
 	<link rel="stylesheet" href="asset/css/style.css" />
 
-	<!-- 重置样式表 -->
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
-	<!-- 引入slide插件样式表 -->
-	<link rel="stylesheet" href="./asset/plug/full-screen-slide.min.css">
+	
 </head>
 
 <body>
+	<!-- 固定导航 -->
+	<div class="servceHeader servceHeaderF" style="opacity:0;box-shadow: 0px 2px 18px #ccc;">
+			<div class="slideTo">
+				<div class="header">
+					<img class="logo" src="./asset/img/logo.png" alt="">
+					<div class="nav">
+						<ul class="navList">
+							<a href="home.html"><li  class="active">首页</li></a>
+							<a href="about.html"><li>小镇介绍</li></a>
+							<a href="servce.html"><li>产业服务</li></a>
+							<a href="news.html"><li>小镇动态</li></a>
+							<a href="contact.html"><li>联系我们</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- 第一部分 -->
 	<div class="homeF">
 		<div class="slideTo">
@@ -267,6 +281,7 @@
 			<div class="slide-box">
 				<!-- 轮播图主体模块 -->
 				<div class="slide-con">
+						<div class="yinying"></div>
 					<div class="slide-out">
 						<div class="slide-li">
 							<div class="slide-li-content">
@@ -274,7 +289,7 @@
 									<img src="./asset/img/lianmeng1.jpg" style="width: 100%" alt="">
 								</div>
 							</div>
-							<div class="slide-li-cons">
+							<div class="slide-li-cons" style="display:inline-block">
 								<h3>碧桂园</h3>
 								<p>碧桂园集团成立于1992年，2007年在香港上市，是《财富》全球500强企业。碧桂园是中国新型城镇化进程的身体力行者，是全球绿色生态智慧城市的建造者，为超过400个城镇带来现代化的城市面貌，服务超300万业主，是世界销售面积第一的房地产开发商，稳居国内地产企业前三甲。目前，依托碧桂园多年积累的丰富资源，集团将迈入产城一体化领域。</p>
 							</div>
@@ -403,25 +418,25 @@
 						<label for="">姓名
 							<span>*</span>
 						</label>
-						<input name='useName' type="text" placeholder="请输入你的姓名" />
+						<input name='useName' type="text" placeholder="请输入您的姓名" />
 					</li>
 					<li>
 						<label for="">公司
 							<span>*</span>
 						</label>
-						<input name='conpany' type="text" placeholder="请输入你的公司" />
+						<input name='conpany' type="text" placeholder="请输入您的公司" />
 					</li>
 					<li>
 						<label for="">邮箱
 							<span>*</span>
 						</label>
-						<input name='mail' type="text" placeholder="请输入你的邮箱" />
+						<input name='mail' type="text" placeholder="请输入您的邮箱" />
 					</li>
 					<li>
 						<label for="">电话
 							<span>*</span>
 						</label>
-						<input name='tel' type="tel" placeholder="请输入你的电话" />
+						<input name='tel' type="tel" placeholder="请输入您的电话" />
 					</li>
 				</ul>
 				<div class="btnBanner">
@@ -447,8 +462,14 @@
 		<p class="copyRight">佛山市顺德区碧桂园物业发展有限公司版权所有 粤ICP备05055114号-1</p>
 	</div>
 	<img class="goTop" src="./asset/img/gotop.png" alt="">
+
+
+	<!-- 重置样式表 -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+	<!-- 引入slide插件样式表 -->
+	<link rel="stylesheet" href="./asset/plug/full-screen-slide.min.css">
 		<!--mr-app.js是jquery和common.js合并后的文件-->
-		<script src="asset/js/mr-app.js"></script>
+	<script src="asset/js/mr-app.js"></script>
 			<!--js.js文件是进行js1.js,js2.js,js3.js合并后的文件-->
 	<script src="asset/js/js.js"></script>
 	<script src='./asset/plug/jquery.SuperSlide.2.1.1.js'></script>
@@ -458,7 +479,10 @@
 		jQuery("#slideBox").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true });
 		jQuery("#slideBox1").slide({ mainCell: ".bd ul", effect: "leftLoop", autoPlay: true });
 		// 默认调用
-		$('.slide-box-demo').setSlide({'slideLiw':1054, 'slideLih': 900,'autoPlay':true })
+		$('.slide-box-demo').setSlide({'slideLiw':1054, 'slideLih': 900,'autoPlay':false,fn:function(index){
+			$('.slide-li-cons').hide()
+			$('.slide-li-cons').eq(index).show()
+		} })
 		//画上去显示浮层
 		$('.serverBox li').mouseover(function () {
 			$(this).find('.btitle').hide();

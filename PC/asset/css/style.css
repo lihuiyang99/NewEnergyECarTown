@@ -194,6 +194,10 @@ tbody tr {
   line-height: 30px;
   border-bottom: 1px solid transparent;
 }
+.homeF .slideTo .header .nav .navList li:hover{
+  /* color: blueviolet; */
+  border-bottom: 1px solid #fff!important;
+}
 .homeF .slideTo .header .nav .navList li.active {
   border-bottom: 1px solid #fff;
 }
@@ -519,9 +523,10 @@ tbody tr {
 }
 .homeFour .slideTo1 .slideBox .bd .serverBox ol li .btitle {
   position: absolute;
+  background: rgba(0,0,0,.4);
   bottom: 0;
   width: 100%;
-  padding: 0 0 20px 20px;
+  padding: 10px 0 20px 20px;
   box-sizing: border-box;
   font-size: 18px;
   color: #fff;
@@ -829,6 +834,9 @@ tbody tr {
   line-height: 30px;
   border-bottom: 1px solid transparent;
 }
+.footer .footerInner .nav .navList li:hover{
+  border-bottom: 1px solid #fff!important;
+}
 .footer .footerInner .nav .navList li.active {
   border-bottom: 1px solid #fff;
 }
@@ -849,8 +857,14 @@ tbody tr {
   left: 50%;
   margin-left: 610px;
   z-index: 10;
+  opacity: 0.3;
+}
+.goTop:hover{
+  opacity: 1;
 }
 .servceHeader {
+  z-index: 10;
+  position: fixed;
   width: 100%;
   background: #2f3d6b;
   height: 120px;
@@ -888,10 +902,14 @@ tbody tr {
   line-height: 30px;
   border-bottom: 1px solid transparent;
 }
+.servceHeader .slideTo .header .nav .navList li:hover{
+  border-bottom: 1px solid #fff!important;
+}
 .servceHeader .slideTo .header .nav .navList li.active {
   border-bottom: 1px solid #fff;
 }
 .servceCon {
+  padding-top: 120px;
   width: 100%;
   background: url(../img/servceBg.png) no-repeat bottom;
   background-size: 100% 350px;
@@ -916,6 +934,7 @@ tbody tr {
   clear: both;
 }
 .servceCon .servceContent .conL {
+  position: fixed;
   float: left;
   width: 250px;
   padding: 54px 67px 20px 63px;
@@ -951,6 +970,7 @@ tbody tr {
   right: 0;
 }
 .servceCon .servceContent .comR {
+  margin-left: 250px;
   width: 950px;
   float: left;
   padding: 0px 0 0 0px;
@@ -1116,12 +1136,16 @@ tbody tr {
   color: #3a3a3b;
 }
 .slide-page .slide-button-prev {
-  left: -47px !important;
+  left: -17px !important;
 }
 .slide-page .slide-button-next {
-  right: -47px !important;
+  right: -17px !important;
 }
 .slide-li {
+  transform: scale(0.88)!important;
+  -moz-transform: scale(0.88)!important;
+  -webkit-transform: scale(0.88)!important;
+  -o-transform: scale(0.88)!important;
   text-align: center;
   font-size: 18px;
   display: -webkit-box;
@@ -1139,11 +1163,13 @@ tbody tr {
   position: relative;
 }
 .slide-li .slide-li-cons {
+  display: none;
   position: absolute;
   top: 630px;
   width: 100%;
   height: 250px;
 }
+
 .slide-li .slide-li-cons h3 {
   font: 24px;
   line-height: 40px;
@@ -1163,6 +1189,13 @@ tbody tr {
   top: 0!important;
   margin: 0;
 }
+.slide-con .yinying{
+  position: absolute;
+  width: 928px;
+  left: 62px;
+  height: 557px;
+  box-shadow: 0px 13px 46px #ccc;
+}
 .slide-page .slide-button-prev, .slide-page .slide-button-next {
   position: absolute;
   top: 50%;
@@ -1171,3 +1204,6 @@ tbody tr {
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
+.servceList li a:target{ 
+  padding-top: 200px!important; 
+  }

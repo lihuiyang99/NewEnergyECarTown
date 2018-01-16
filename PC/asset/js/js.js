@@ -1,18 +1,18 @@
-$(function() {
+$(function () {
 	calcSideH();
-	$(window).resize(function() {
+	$(window).resize(function () {
 		calcSideH();
 	});
 	//去除side>div下最后一个a的border
-	$(".side li div").each(function() {
+	$(".side li div").each(function () {
 		$(this).children("a").last().css("border", "none")
 	});
 	//将图像替换成背景
 	imgToBg($(".side li h2 span"));
 	//手凤琴
-	$(".side h2").click(function() {
+	$(".side h2").click(function () {
 		var status = $(this).next("div").css("display");
-		if(status == "none") {
+		if (status == "none") {
 			$(this).next("div").slideDown();
 			$(this).addClass("on");
 		} else {
@@ -20,19 +20,19 @@ $(function() {
 			$(this).removeClass("on");
 		}
 	});
-	$(".side h2").each(function() {
+	$(".side h2").each(function () {
 		var status = $(this).hasClass("on");
-		if(status) {
+		if (status) {
 			$(this).next("div").show();
 		} else {
 			$(this).next("div").hide();
 		}
 	});
 	//table tr hover
-	$(".table-response tbody tr").hover(function(){
-		$(this).find("td").css("background","#e8eff5");
-	},function(){
-		$(this).find("td").css("background","");
+	$(".table-response tbody tr").hover(function () {
+		$(this).find("td").css("background", "#e8eff5");
+	}, function () {
+		$(this).find("td").css("background", "");
 	})
 })
 
@@ -43,7 +43,7 @@ function calcSideH() {
 	var headH = $(".head").height();
 	var H = winH - headH;
 	var mainH = $(".main").height();
-	if(H > mainH) {
+	if (H > mainH) {
 		$(".side").css("min-height", H);
 		$(".main").css("min-height", H - 71)
 	} else {
@@ -52,7 +52,7 @@ function calcSideH() {
 };
 
 function imgToBg(obj) {
-	obj.each(function() {
+	obj.each(function () {
 		var imgSrc = $(this).find("img").attr("src");
 		$(this).find("img").hide();
 		$(this).css("background", "url(" + imgSrc + ") no-repeat center center")
@@ -74,13 +74,48 @@ $(".goTop").click(function () {
 	return false;
 });
 $(window).scroll(function () {
+	var flag;
+	if ($(this).scrollTop() >80) {
+		flag = 0;
+	} else {
+		flag = 1;
+	}
+	if (flag == 0) {
+		console.log('1111')
+		$('.servceHeaderF').animate({ 'opacity': 1 }, 10)
+	} else if(flag == 1) {
+		console.log('2222')
+		$('.servceHeaderF').css({ 'opacity': 0 }, 0)
+	}
+
+
 	if ($(this).height() < $(this).scrollTop()) {
 		$('.goTop').show()
 	} else {
 		$('.goTop').hide()
 	}
-	console.log($(this).scrollTop())
 })
 
 
+
+if (window.location.hash.indexOf('#') >= 0) {
+	$('html,body').animate({
+		scrollTop: ($(window.location.hash).offset().top - 50) + "px"
+	},
+		300);
+}; //主要修复评论定位不准确BUG
+$('.servceList li a[href^=#][href!=#]').click(function () {
+	$(this).parent('li').siblings().removeClass('active')
+	$(this).parent('li').addClass('active')
+
+
+	var target = document.getElementById(this.hash.slice(1));
+	if (!target) return;
+	var targetOffset = $(target).offset().top - 200;
+	$('html,body').animate({
+		scrollTop: targetOffset
+	},
+		300);
+	return false;
+});
 //# sourceMappingURL=../maps/js.js.map

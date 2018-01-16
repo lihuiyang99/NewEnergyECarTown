@@ -1,5 +1,7 @@
 
-
+html, body{
+  opacity: 0;
+}
 .header .twb_tuijian {
   position: absolute;
   top: 0px;
@@ -623,6 +625,14 @@ body {
   overflow: hidden;
   margin-left: .43rem;
   margin-right: .49rem;
+}
+.lianmeng .wrapper .yinying{
+  position: absolute;
+    top: 0;
+    left: 6%;
+    width: 88%;
+    height: 4rem;
+    box-shadow: 0rem 0.2rem 0.6rem #eee;
 }
 .container{
   max-width: 800px;
