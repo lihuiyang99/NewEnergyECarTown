@@ -1,8 +1,7 @@
-
+﻿
 html, body{
-  font-size: 100px;
   opacity: 0.3;
-  font-family: "微软雅黑"；
+  font-family: "微软雅黑";
 }
 .header .twb_tuijian {
   position: absolute;
