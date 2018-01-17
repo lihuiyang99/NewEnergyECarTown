@@ -418,6 +418,7 @@ body {
 .footer{
   padding-top: .44rem;
   height: 1.78rem;
+  width: 100%;
   background: #293253;
 }
 .footer .footerTop{
