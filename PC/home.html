@@ -479,7 +479,7 @@
 		jQuery("#slideBox").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true });
 		jQuery("#slideBox1").slide({ mainCell: ".bd ul", effect: "leftLoop", autoPlay: true });
 		// 默认调用
-		$('.slide-box-demo').setSlide({'slideLiw':1054, 'slideLih': 900,'autoPlay':true,fn:function(index){
+		$('.slide-box-demo').setSlide({'slideLiw':1054, 'slideLih': 900,'autoPlay':false,fn:function(index){
 			$('.slide-li-cons').hide()
 			$('.slide-li-cons').eq(index).show()
 		} })

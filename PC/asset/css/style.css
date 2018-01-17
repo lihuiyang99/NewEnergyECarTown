@@ -1,9 +1,10 @@
-
 html,
 body {
+  font-family:"Microsoft yYaHei";
   height: 100%;
   min-width: 1200px;
 }
+
 .clearboth {
   height: 0px;
   clear: both;
@@ -955,6 +956,9 @@ tbody tr {
   border-bottom: 1px solid #9ea2b0;
 }
 .servceCon .servceContent .conL .servceList li a {
+  display:inline-block;
+  width: 100%;
+  height: 100%;
   color: #3a3a3b;
 }
 .servceCon .servceContent .conL .servceList li.active a {
@@ -1142,10 +1146,10 @@ tbody tr {
   right: -17px !important;
 }
 .slide-li {
-  transform: scale(0.88)!important;
-  -moz-transform: scale(0.88)!important;
-  -webkit-transform: scale(0.88)!important;
-  -o-transform: scale(0.88)!important;
+  transform: scale(0.8)!important;
+  -moz-transform: scale(0.8)!important;
+  -webkit-transform: scale(0.8)!important;
+  -o-transform: scale(0.8)!important;
   text-align: center;
   font-size: 18px;
   display: -webkit-box;
@@ -1166,6 +1170,7 @@ tbody tr {
   display: none;
   position: absolute;
   top: 630px;
+  left:0;
   width: 100%;
   height: 250px;
 }
@@ -1186,6 +1191,7 @@ tbody tr {
 .slide-box .slide-out .slide-li .slide-li-content {
   position: absolute!important;
   width: 100%;
+  left:0;
   top: 0!important;
   margin: 0;
 }
@@ -1193,7 +1199,8 @@ tbody tr {
   position: absolute;
   width: 928px;
   left: 62px;
-  height: 557px;
+  top: 52px;
+  height: 504px;
   box-shadow: 0px 13px 46px #ccc;
 }
 .slide-page .slide-button-prev, .slide-page .slide-button-next {
@@ -1207,3 +1214,10 @@ tbody tr {
 .servceList li a:target{ 
   padding-top: 200px!important; 
   }
+
+  .slide-box .slide-out .slide-li.slide-li-act {
+    transform: scale(0.9)!important;
+    -moz-transform: scale(0.9)!important;
+    -webkit-transform: scale(0.9)!important;
+    -o-transform: scale(0.9)!important;
+}
