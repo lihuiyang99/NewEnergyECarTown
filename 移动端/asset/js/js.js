@@ -35,7 +35,7 @@ $('#tabs .clearfix').on('click', 'li', function () {
 	//计算内容的高度
 	setTimeout(function(){
 		computedH()
-		computedC()
+		
 	},200)
 
 

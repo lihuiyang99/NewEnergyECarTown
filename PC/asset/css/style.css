@@ -1095,7 +1095,7 @@ tbody tr {
   font-size: 30px;
   font-weight: 500;
   color: #3a3a3b;
-  height: 55px;
+  /* height: 55px; */
   line-height: 55px;
   text-align: center;
 }

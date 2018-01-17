@@ -827,7 +827,7 @@ button.right{
 .contentDes .title1 {
   font-weight: 500;
   color: #3a3a3b;
-  height: .55rem;
+  /* height: .55rem; */
   line-height: .55rem;
   text-align: center;
   font-size: .3rem;
