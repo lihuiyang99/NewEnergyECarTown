@@ -40,17 +40,7 @@ function replaceAlink() {
 //左右翻页，html文件名称p1.html...p100.html
 //==========================================================
 
-document.onkeydown = chang_page
 
-function chang_page(ev) {
-	var evt = ev || window.event;
-	var arr = /(\d+)-?(\d*).html/g.exec(window.location.pathname);
-	var numarr = arr[0].split(".");
-	var countdesc = parseInt(numarr[0]) - 1 > 0 ? parseInt(numarr[0]) - 1 : 1;
-	var countasc = parseInt(numarr[0]) + 1;
-	if(evt.keyCode == 37 || evt.keyCode == 33) location.href = window.location.pathname.replace(arr[0], countdesc + '.html');
-	if(evt.keyCode == 39 || evt.keyCode == 34) location.href = window.location.pathname.replace(arr[0], countasc + '.html');
-}
 
 //==========================================================
 //模拟alert

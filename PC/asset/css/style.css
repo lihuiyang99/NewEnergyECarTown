@@ -983,6 +983,9 @@ tbody tr {
 .servceCon .servceContent .comR .servceDes {
   width: 100%;
 }
+.servceCon .servceContent .comR img {
+  margin:10px  auto;
+}
 .servceCon .servceContent .comR .servceDes .title1 {
   font-weight: 500;
   margin-top: 50px;

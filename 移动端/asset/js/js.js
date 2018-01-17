@@ -35,6 +35,7 @@ $('#tabs .clearfix').on('click', 'li', function () {
 	//计算内容的高度
 	setTimeout(function(){
 		computedH()
+		computedC()
 	},200)
 
 
@@ -100,6 +101,18 @@ function aaa(val) {
 
 function computedH() {
 	var TH=$('.tabs').height()
+	var HH=$('.header').height()
+	var WH=$(window).height()
+	var fT=$('.footer').height()
+
+	if(TH+HH+fT<WH){
+		$('.footer').css({'position':'absolute','bottom':0})
+	}else{
+		$('.footer').css({'position':'initial'})
+	}
+}
+function computedC() {
+	var TH=$('.contentDes').height()
 	var HH=$('.header').height()
 	var WH=$(window).height()
 	var fT=$('.footer').height()
